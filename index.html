@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="e-commerce">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <title>SW_e-commerce</title>
+    <script src="main.js" async></script>
+</head>
+<body>
+  
+    <!-- Topbar -->
+      <nav class="topbar">
+        <input type="checkbox" id="check-mobile_menu">
+        <input type="checkbox" id="check-mobile_profil_customer">
+        <input type="checkbox" id="check-desktop_shopping-bag">
+        <input type="checkbox" id="check-desktop_profil_customer">
+        <!-- Topbar mobile -->
+        
+        <div class="topbar-mobile">
+          
+          <ul class="topbar-mobile_menu">
+            <li class="menu-btn_container">
+              <label for="check-mobile_menu" class="checkbtn-menu">
+                <div class="menu-btn" title="Menu" >
+                  <div class="menu-btn_bar"></div>
+                </div>
+              </label>
+            </li>
+          </ul>
+          <ul class="topbar-mobile_logo">
+            <li class="mobile_logo">
+              <a href="index.html" title="Accueil">e-commerce</a>
+            </li>
+          </ul>
+
+          <ul class="topbar-mobile_profil_customer">
+            <li class="mobile-profil_customer-btn_container">
+              <label for="check-mobile_profil_customer" class="checkbtn-profil_customer">
+                <div class="mobile-profil_customer" title="Profile"><i class='bx bx-shopping-bag'></i></div>
+              </label>
+            </li>
+          </ul>
+        </div>
+        
+          <ul class="mobile-menu_nav">
+            <li class="mobile-search">
+              <div class="mobile-search_icon"><i class='bx bx-search'></i></div>
+              <input class="mobile-search_bar" type="text" placeholder="Rechercher">
+            </li>
+            <li class="mobile-menu_nav_1"><a href="#" title="nav-1">Nav-1</a></li>
+            <li class="mobile-menu_nav_2"><a href="#" title="nav-2">Nav-2</a></li>
+            <li class="mobile-menu_nav_3"><a href="#" title="nav-3">Nav-3</a></li>
+            <li class="mobile-menu_nav_4"><a href="#" title="nav-4">Nav-4</a></li> 
+          </ul>
+
+          <ul class="mobile-profil_nav">
+            <li class="mobile-account">
+              <a href="#" title="Compte">
+                <i class='bx bx-user'></i>
+                <span class="mobile-account_text">Mon profil</span>
+              </a>
+            </li>
+            <li class="mobile-package">
+              <a href="#" title="Commande">
+                <i class='bx bx-package'></i>
+                <span class="mobile-package_text">Commande</span>
+              </a>
+            </li>
+            <li class="mobile-shopping-bag">
+              <a href="#" title="Panier">
+                <i class='bx bx-shopping-bag'></i>
+                <span class="mobile-shopping-bag_text">Panier</span>
+              </a>
+            </li>
+            <li class="mobile-favorites">
+              <a href="#" title="Favoris">
+                <i class='bx bx-heart' ></i>
+                <span class="mobile-favorites_text">Favoris</span>
+              </a>
+            </li>
+          </ul>
+        <script src="menuBtn.js" async></script>
+        
+        <!-- Fin topbar mobile -->
+
+        <!-- Topbar desktop -->
+        <div class="topbar-desktop">
+          <ul class="topbar-desktop_logo">
+            <li class="desktop_logo">
+              <a href="index.html" title="Accueil">e-commerce</a>
+            </li>
+          </ul>
+
+          <ul class="topbar-desktop-nav_1">
+            <li class="desktop-nav_1"><a href="#" title="nav-1">Nav-1</a></li>
+            <li class="desktop-nav_2"><a href="#" title="nav-2">Nav-2</a></li>
+            <li class="desktop-nav_3"><a href="#" title="nav-3">Nav-3</a></li>
+          </ul>
+            
+          <ul class="topbar-desktop-nav_2">
+            <div class="desktop-search">
+              <li class="desktop-search_icon"><i class='bx bx-search'></i></li>
+              <input class="desktop-search_bar" type="text" placeholder="Rechercher">
+            </div>
+            <li class="desktop-shopping-bag"><a href="#" title="Panier"><i class='bx bx-shopping-bag'></i></a></li>
+            <li class="desktop-profil_customer-btn_container">
+              <label for="check-desktop_profil_customer" class="checkbtn-profil_customer">
+                <div class="desktop-profil_customer" title="Profile"><i class='bx bx-user'></i></div>
+              </label>
+            </li> 
+          </ul>
+        </div>
+
+        <ul class="desktop-profil_nav">
+          <li class="desktop-account">
+            <a href="#" title="Compte">
+              <i class='bx bx-user'></i>
+              <span class="desktop-account_text">Mon profil</span>
+            </a>
+          </li>
+          <li class="desktop-package">
+            <a href="#" title="Commande">
+              <i class='bx bx-package'></i>
+              <span class="desktop-package_text">Commande</span>
+            </a>
+          </li>
+          <li class="desktop-shopping-bag">
+            <a href="#" title="Panier">
+              <i class='bx bx-shopping-bag'></i>
+              <span class="desktop-shopping-bag_text">Panier</span>
+            </a>
+          </li>
+          <li class="desktop-favorites">
+            <a href="#" title="Favoris">
+              <i class='bx bx-heart' ></i>
+              <span class="desktop-favorites_text">Favoris</span>
+            </a>
+          </li>
+        </ul>
+        <!-- Fin topbar desktop -->
+
+
+
+        
+        <!--</div>-->
+      </nav>
+    <!-- Fin topbar -->
+  <!--Contain-->
+  <div class="contain">
+      <!-- header -->
+      <header class="header">
+        <h1 class="title-1">e-commerce, acheter quand vous voulez et où vous voulez.</h1>
+      </header>
+      <!-- Fin header -->
+      
+      <!-- Main -->
+      <div class="main">
+        <!--Category-1-->
+        <div class="category">
+          <h2>categorie 1</h2>
+          <!-- Cards -->
+          <div class="cards">
+            <!-- Card-1 -->
+            <div class="card">
+              <a href="#">
+              <img src="img/chaussure-air-jordan-1-mid-X5Hjk9.jfif" alt=""> 
+              <h4 class="card_title">Air Jordan 1 mid</h4>  
+              <div class="card_body">
+                <p>chaussure homme</p>
+              </div>
+              <h4 class="card_price">100$</h4>
+              </a>         
+            </div>
+            <!-- Fin card-1 -->
+            <!-- Card-2 -->
+            <div class="card">
+              <a href="#">
+                <img src="img/chaussure-air-jordan-1-mid-X5Hjk9.jfif" alt=""> 
+                <h4 class="card_title">Air Jordan 1 mid</h4>  
+                <div class="card_body">
+                  <p>chaussure homme</p>
+                </div>
+                <h4 class="card_price">100$</h4> 
+              </a>        
+            </div>
+            <!-- Fin card-2 -->
+            <!-- Card-3 -->
+            <div class="card">
+              <a href="#">
+                <img src="img/chaussure-air-jordan-1-mid-X5Hjk9.jfif" alt="">
+                <h4 class="card_title">Air Jordan 1 mid</h4>  
+                <div class="card_body">
+                  <p>chaussure homme</p>
+                </div>
+                <h4 class="card_price">100$</h4>
+              </a>         
+            </div>
+            <!-- Fin card-3 -->
+            <!-- Card-4 -->
+            <div class="card">
+              <a href="#">
+                <img src="img/chaussure-air-jordan-1-mid-X5Hjk9.jfif" alt=""> 
+                <h4 class="card_title">Air Jordan 1 mid</h4>  
+                <div class="card_body">
+                  <p>chaussure homme</p>
+                </div>
+                <h4 class="card_price">100$</h4> 
+              </a>        
+            </div>
+            <!-- Fin card-4 -->
+            <!-- Card-5 -->
+            <div class="card">
+              <a href="#">
+                <img src="img/chaussure-air-jordan-1-mid-X5Hjk9.jfif" alt=""> 
+                <h4 class="card_title">Air Jordan 1 mid</h4>  
+                <div class="card_body">
+                  <p>chaussure homme</p>
+                </div>
+                <h4 class="card_price">100$</h4> 
+              </a>           
+            </div>
+            <!-- Fin card-5 -->
+          </div>
+          <!-- Fin cards -->
+        </div>
+        <!--Fin category-1-->
+        <!--Category-2-->
+        <div class="category">
+          <h2>categorie 2</h2>
+          <!-- Cards -->
+          <div class="cards">
+            <!-- Card-1 -->
+            <div class="card">
+              <a href="#">
+                <img src="img/sweat-a-capuche-sportswear-club-fleece-0wd6rF.jfif" alt=""> 
+                <h4 class="card_title">Nike sportswear club fleece</h4>
+                <div class="card_body">
+                  <p>Sweat à capuche</p>
+                </div>
+                <h4 class="card_price">55$</h4>
+              </a>         
+            </div>
+            <!-- Fin card-1 -->
+            <!-- Card-2 -->
+            <div class="card">
+              <a href="#">
+                <img src="img/sweat-a-capuche-sportswear-club-fleece-0wd6rF.jfif" alt=""> 
+                <h4 class="card_title">Nike sportswear club fleece</h4>  
+                <div class="card_body">
+                  <p>Sweat à capuche</p>
+                </div>
+                <h4 class="card_price">55$</h4>
+              </a>         
+            </div>
+            <!-- Fin card-2 -->
+            <!-- Card-3 -->
+            <div class="card">
+              <a href="#">
+                <img src="img/sweat-a-capuche-sportswear-club-fleece-0wd6rF.jfif" alt="">
+                <h4 class="card_title">Nike sportswear club fleece</h4>  
+                <div class="card_body">
+                  <p>Sweat à capuche</p>
+                </div>
+                <h4 class="card_price">55$</h4>
+              </a>         
+            </div>
+            <!-- Fin card-3 -->
+            <!-- Card-4 -->
+            <div class="card">
+              <a href="#">
+                <img src="img/sweat-a-capuche-sportswear-club-fleece-0wd6rF.jfif" alt="">
+                <h4 class="card_title">Nike sportswear club fleece</h4>  
+                <div class="card_body">
+                  <p>Sweat à capuche</p>
+                </div>
+                <h4 class="card_price">55$</h4> 
+              </a>        
+            </div>
+            <!-- Fin card-4 -->
+            <!-- Card-5 -->
+            <div class="card">
+              <a href="#">
+                <img src="img/sweat-a-capuche-sportswear-club-fleece-0wd6rF.jfif" alt="">
+                <h4 class="card_title">Nike sportswear club fleece</h4>  
+                <div class="card_body">
+                  <p>Sweat à capuche</p>
+                </div>
+                <h4 class="card_price">55$</h4> 
+              </a>       
+            </div>
+            <!-- Fin card-5 -->
+          </div>
+          <!-- Fin cards -->
+        </div>
+        <!--Fin category-2-->
+      </div>
+      <!-- Fin main -->
+  </div>
+  <!--Fin contain-->
+</body>
+</html>
